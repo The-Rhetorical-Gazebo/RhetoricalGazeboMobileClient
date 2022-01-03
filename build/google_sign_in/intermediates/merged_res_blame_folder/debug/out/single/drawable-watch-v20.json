@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/f2ba3a2795aee0ca344204a82a6daa7b/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/f2ba3a2795aee0ca344204a82a6daa7b/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/f2ba3a2795aee0ca344204a82a6daa7b/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

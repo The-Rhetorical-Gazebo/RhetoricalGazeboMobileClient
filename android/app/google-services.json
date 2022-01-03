@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "398447024477",
+    "project_id": "the-rhetorical-gazebo",
+    "storage_bucket": "the-rhetorical-gazebo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398447024477:android:bda32e3d99f850aa86b0b4",
+        "android_client_info": {
+          "package_name": "com.example.gazebo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398447024477-m9p34ffamc9b17ko82bgrf702jak22l1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gazebo",
+            "certificate_hash": "a84fcc5c1b6f04f45c0329d0871093618647594f"
+          }
+        },
+        {
+          "client_id": "398447024477-d39hcpu0v5gbnfdao90ckv8h2rjop7q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi8B2TWaq_SFeHZSvQlXzvgFadwD55884"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398447024477-d39hcpu0v5gbnfdao90ckv8h2rjop7q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
