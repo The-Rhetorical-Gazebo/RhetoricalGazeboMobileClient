@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml",
+            "outputFile": "/Users/zaphod/Documents/Gazebo/mobileClient/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml",
             "map": [
                 {
                     "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/e31537fb3ca3accaea0d4d9ddb9631cc/jetified-play-services-basement-17.0.0/res/values-hy/values.xml",

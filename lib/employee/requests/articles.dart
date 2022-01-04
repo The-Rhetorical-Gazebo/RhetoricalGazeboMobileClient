@@ -13,11 +13,14 @@ Future<bool> _postArticle(Map<String, dynamic> fields) async {
 
     List<dynamic> content = await loadDocumentContent(fields["googleDocId"]);
     Map<String, dynamic> final_fields = fields;
+    String? author = await localStorage.readFromLocalStorage("name");
     final_fields["content"] = content;
+    final_fields["name"] = author == null ? "Anonymous" : author;
     Uri uri = Uri.parse(dotenv.env["domain"]! + "/api/articles");
     String local_token =
         await localStorage.readFromLocalStorage("x-auth-token");
-    if (final_fields["image_is_local"] != null && final_fields["image_is_local"]) {
+    if (final_fields["image_is_local"] != null &&
+        final_fields["image_is_local"]) {
       File image = final_fields["image"];
       String image_link = await uploadImage(image);
       if (image_link == "") {

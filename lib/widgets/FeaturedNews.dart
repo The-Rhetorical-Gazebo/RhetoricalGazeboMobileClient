@@ -6,6 +6,7 @@ import "package:flutter/services.dart";
 import 'dart:ui' as ui;
 import "BlurredText.dart";
 import "package:flutter_spinkit/flutter_spinkit.dart";
+import "package:bordered_text/bordered_text.dart";
 
 class FeaturedNews extends StatelessWidget {
   //TODO: Consider adding description to display with featured news (image too)
@@ -80,13 +81,17 @@ class FeaturedNews extends StatelessWidget {
                                       MediaQuery.of(context).size.width * .05),
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  title!,
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.w700,
-                                      color: Colors.white),
+                                child: BorderedText(
+                                  strokeWidth: 1.0,
+                                  strokeColor: Colors.grey,
+                                  child: Text(
+                                    title!,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        fontSize: 30,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.white),
+                                  ),
                                 ),
                               ),
                             ),

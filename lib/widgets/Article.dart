@@ -9,6 +9,7 @@ import "../pages/Genre.dart";
 import "package:google_fonts/google_fonts.dart";
 import 'package:intl/date_symbol_data_local.dart';
 import "package:intl/intl.dart";
+import "package:bordered_text/bordered_text.dart";
 
 class Article extends StatelessWidget {
   Map<String, Widget> genre_icons = {
@@ -84,12 +85,16 @@ class Article extends StatelessWidget {
                     child: Row(
                       children: <Widget>[
                         SizedBox(width: 15),
-                        Text(
-                          genre!,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600),
+                        BorderedText(
+                          strokeColor: Colors.grey,
+                          strokeWidth: 1.0,
+                          child: Text(
+                            genre!,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600),
+                          ),
                         ),
                         Icon(Icons.slideshow, color: Colors.white, size: 20),
                       ],

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/google_sign_in/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml",
+            "outputFile": "/Users/zaphod/Documents/Gazebo/mobileClient/build/google_sign_in/intermediates/res/merged/debug/values-zu/values-zu.xml",
             "map": [
                 {
                     "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/531f3815f95b3d87fde544b7793833f1/jetified-play-services-base-16.0.1/res/values-zu/values.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/google_sign_in/intermediates/res/merged/debug/values-zu/values-zu.xml",
+            "outputFile": "/Users/zaphod/Documents/Gazebo/mobileClient/build/google_sign_in/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml",
             "map": [
                 {
                     "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/531f3815f95b3d87fde544b7793833f1/jetified-play-services-base-16.0.1/res/values-zu/values.xml",

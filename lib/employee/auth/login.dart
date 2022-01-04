@@ -18,8 +18,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   bool _rememberMe = false;
   TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController(); 
-
+  TextEditingController _passwordController = TextEditingController();
 
   Future<void> login(String username, String password) async {
     try {
@@ -46,6 +45,7 @@ class _LoginState extends State<Login> {
         return;
       }
       //login success
+      await localStorage.writeToLocalStorage("name", response["name"]);
       await localStorage.writeToLocalStorage("x-auth-token", response["token"]);
       await localStorage.writeToLocalStorage("admin", response["admin"]);
       if (response["admin"]) {

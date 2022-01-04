@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/zaphod/Documents/Gazebo/mobileClient/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/f2ba3a2795aee0ca344204a82a6daa7b/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",

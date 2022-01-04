@@ -12,23 +12,23 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
-15-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+15-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 16
 17    <queries>
-17-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:15
+17-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:15
 18        <intent>
-18-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:18
+18-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:18
 19            <action android:name="android.intent.action.GET_CONTENT" />
-19-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-72
-19-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:21-69
+19-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-72
+19-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:21-69
 20
 21            <data android:mimeType="*/*" />
-21-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
-21-->[:file_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-41
+21-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-44
+21-->[:file_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/file_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-41
 22        </intent>
 23    </queries>
 24
@@ -43,28 +43,28 @@
 27-->[com.google.android.gms:play-services-measurement:20.0.0] /Users/zaphod/.gradle/caches/transforms-2/files-2.1/8450057caa35aac30a045729c438a3d4/jetified-play-services-measurement-20.0.0/AndroidManifest.xml:26:22-107
 28
 29    <application
-29-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:3:4-40:19
+29-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:3:4-40:19
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 30-->[androidx.core:core:1.1.0] /Users/zaphod/.gradle/caches/transforms-2/files-2.1/3c8fd1bfddb99a7a7e21faa1397acdb4/core-1.1.0/AndroidManifest.xml:24:18-86
 31        android:debuggable="true"
 32        android:icon="@mipmap/ic_launcher"
-32-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:5:9-43
+32-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:5:9-43
 33        android:label="gazebo" >
-33-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:4:9-31
+33-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:4:9-31
 34        <activity
-34-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:6:9-34:20
+34-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:6:9-34:20
 35            android:name="com.example.gazebo.MainActivity"
-35-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:7:13-41
+35-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:7:13-41
 36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-36-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:10:13-163
+36-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:10:13-163
 37            android:hardwareAccelerated="true"
-37-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:11:13-47
+37-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:11:13-47
 38            android:launchMode="singleTop"
-38-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:8:13-43
+38-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:8:13-43
 39            android:theme="@style/LaunchTheme"
-39-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:9:13-47
+39-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:9:13-47
 40            android:windowSoftInputMode="adjustResize" >
-40-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:12:13-55
+40-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:12:13-55
 41
 42            <!--
 43                 Specifies an Android theme to apply to this Activity as soon as
@@ -73,11 +73,11 @@
 46                 to determine the Window background behind the Flutter UI.
 47            -->
 48            <meta-data
-48-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:17:13-20:17
+48-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:17:13-20:17
 49                android:name="io.flutter.embedding.android.NormalTheme"
-49-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:18:15-70
+49-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:18:15-70
 50                android:resource="@style/NormalTheme" />
-50-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:19:15-52
+50-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:19:15-52
 51            <!--
 52                 Displays an Android View that continues showing the launch screen
 53                 Drawable until Flutter paints its first frame, then this splash
@@ -86,21 +86,21 @@
 56                 Flutter's first frame.
 57            -->
 58            <meta-data
-58-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:26:13-29:17
+58-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:26:13-29:17
 59                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-59-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:27:15-79
+59-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:27:15-79
 60                android:resource="@drawable/launch_background" />
-60-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:28:15-61
+60-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:28:15-61
 61
 62            <intent-filter>
-62-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:30:13-33:29
+62-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:30:13-33:29
 63                <action android:name="android.intent.action.MAIN" />
-63-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:31:17-68
-63-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:31:25-66
+63-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:31:17-68
+63-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:31:25-66
 64
 65                <category android:name="android.intent.category.LAUNCHER" />
-65-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:32:17-76
-65-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:32:27-74
+65-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:32:17-76
+65-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:32:27-74
 66            </intent-filter>
 67        </activity>
 68        <!--
@@ -108,28 +108,28 @@
 70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 71        -->
 72        <meta-data
-72-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:37:9-39:33
+72-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:37:9-39:33
 73            android:name="flutterEmbedding"
-73-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:38:13-44
+73-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:38:13-44
 74            android:value="2" />
-74-->/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/android/app/src/main/AndroidManifest.xml:39:13-30
+74-->/Users/zaphod/Documents/Gazebo/mobileClient/android/app/src/main/AndroidManifest.xml:39:13-30
 75
 76        <provider
-76-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+76-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
 77            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-77-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+77-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
 78            android:authorities="com.example.gazebo.flutter.image_provider"
-78-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+78-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
 79            android:exported="false"
-79-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+79-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
 80            android:grantUriPermissions="true" >
-80-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+80-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
 81            <meta-data
-81-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+81-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
 82                android:name="android.support.FILE_PROVIDER_PATHS"
-82-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+82-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
 83                android:resource="@xml/flutter_image_picker_file_paths" />
-83-->[:image_picker] /Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+83-->[:image_picker] /Users/zaphod/Documents/Gazebo/mobileClient/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
 84        </provider>
 85
 86        <service

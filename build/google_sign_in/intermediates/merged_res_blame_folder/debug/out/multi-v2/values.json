@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/google_sign_in/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/zaphod/Documents/Gazebo/mobileClient/build/google_sign_in/intermediates/res/merged/debug/values/values.xml",
             "map": [
                 {
                     "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/a935fa587df289485954d05015b0662e/coordinatorlayout-1.0.0/res/values/values.xml",
@@ -97,7 +97,7 @@
             ]
         },
         {
-            "outputFile": "/Users/zaphod/Documents/HAppFlutter/GazeboMobile/The-Rhetorical-Gazebo/gazebo/build/google_sign_in/intermediates/res/merged/debug/values/values.xml",
+            "outputFile": "/Users/zaphod/Documents/Gazebo/mobileClient/build/google_sign_in/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/zaphod/.gradle/caches/transforms-2/files-2.1/a935fa587df289485954d05015b0662e/coordinatorlayout-1.0.0/res/values/values.xml",

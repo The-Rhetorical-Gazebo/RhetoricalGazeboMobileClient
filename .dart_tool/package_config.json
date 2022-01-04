@@ -8,6 +8,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "archive",
+      "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/archive-3.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/args-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/async-2.7.0",
       "packageUri": "lib/",
@@ -16,6 +28,12 @@
     {
       "name": "boolean_selector",
       "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "bordered_text",
+      "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/bordered_text-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -146,6 +164,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.9.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4",
       "packageUri": "lib/",
@@ -232,6 +256,12 @@
     {
       "name": "http_parser",
       "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/image-3.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -506,13 +536,19 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///Users/zaphod/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "gazebo",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-01-03T21:58:34.888120Z",
+  "generated": "2022-01-04T14:06:26.536177Z",
   "generator": "pub",
   "generatorVersion": "2.14.0-284.0.dev"
 }
