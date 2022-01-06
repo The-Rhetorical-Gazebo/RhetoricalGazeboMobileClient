@@ -180,19 +180,6 @@ class _EditPageState extends State<EditPage> {
             }
           },
         ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: TextButton(
-              onPressed: () {},
-              child: Text(
-                "SKIP",
-                style: TextStyle(
-                    fontSize: 14, letterSpacing: 2.2, color: Colors.black),
-              ),
-            ),
-          )
-        ],
       ),
       body: Container(
         padding: EdgeInsets.only(left: 16, top: 25, right: 16),

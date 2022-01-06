@@ -7,17 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:398447024477:android:bda32e3d99f850aa86b0b4",
+        "mobilesdk_app_id": "1:398447024477:android:7a7c95feb91a0c0d86b0b4",
         "android_client_info": {
-          "package_name": "com.example.gazebo"
+          "package_name": "com.tylerbaughcome.therhetoricalgazebo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "398447024477-m9p34ffamc9b17ko82bgrf702jak22l1.apps.googleusercontent.com",
+          "client_id": "398447024477-8j4ok617sdb3orq81mn3j7jorsarbnmp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.gazebo",
+            "package_name": "com.tylerbaughcome.therhetoricalgazebo",
             "certificate_hash": "a84fcc5c1b6f04f45c0329d0871093618647594f"
           }
         },

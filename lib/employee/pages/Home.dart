@@ -7,10 +7,12 @@ import "../googleapi/drive.dart";
 import "../utilities/widgets.dart";
 import "Features.dart";
 import "../auth/login.dart";
+import "package:flutter/services.dart";
 import "dart:math" as math;
 import "../utilities/localStorage.dart" as localStorage;
 import "../requests/token.dart";
 import "../auth/choice.dart";
+import "package:pull_to_refresh/pull_to_refresh.dart";
 
 //TODO: Show list of documents and press one to post to gazebo
 class EmployeeHome extends StatefulWidget {
@@ -28,6 +30,18 @@ class _EmployeeHomeState extends State<EmployeeHome> {
   List<DocumentTile> documentTiles = [];
   List<dynamic> documents = [];
   Set<dynamic> docsToUpload = {};
+  RefreshController _refreshController =
+      RefreshController(initialRefresh: false);
+
+  void _onRefresh() async {
+    init().then((args) {
+      setState(() {
+        loading = false;
+      });
+      _refreshController.refreshCompleted();
+    });
+  }
+
   void showSuccessSnackbar() {
     WidgetsBinding.instance!.addPostFrameCallback(
         (_) => showSuccess(context, "Documents uploaded successfully"));
@@ -42,8 +56,10 @@ class _EmployeeHomeState extends State<EmployeeHome> {
     try {
       await loginWithGoogle();
       List<dynamic> documentsUtil = await getAllDocuments();
+      documentsUtil.sort((a, b) => a["name"].compareTo(b["name"]));
       bool isAdminUtil = await localStorage.readFromLocalStorage("admin");
       setState(() {
+        documentTiles = [];
         isAdmin = isAdminUtil;
         documents = documentsUtil;
         for (int i = 0; i < documents.length; i++) {
@@ -89,9 +105,15 @@ class _EmployeeHomeState extends State<EmployeeHome> {
     } else {
       if (showSnackbar != null && !showSnackbar!) {
         showSuccessSnackbar();
+        setState(() {
+          showSnackbar = null;
+        });
       }
-      if (widget.uploadFailure != null && showSnackbar!) {
+      if (showSnackbar != null && showSnackbar!) {
         showFailureSnackbar();
+        setState(() {
+          showSnackbar = null;
+        });
       }
       return Scaffold(
           appBar: AppBar(
@@ -116,7 +138,9 @@ class _EmployeeHomeState extends State<EmployeeHome> {
                         //get referral token
                         String? token = await getAdminReferralToken();
                         if (token != null) {
-                          showSuccess(context, token, milliseconds: 10000);
+                          showSuccess(context, token + " (Copied)",
+                              milliseconds: 10000);
+                          Clipboard.setData(ClipboardData(text: token));
                         } else {
                           showError(context,
                               "Your referral token could not be generated. Try logging in again or closing the app.",
@@ -152,10 +176,33 @@ class _EmployeeHomeState extends State<EmployeeHome> {
             centerTitle: true,
             backgroundColor: Colors.black,
           ),
-          body: Center(
-              child: Stack(
+          body: Stack(
             children: [
-              SingleChildScrollView(child: Column(children: documentTiles)),
+              SmartRefresher(
+                enablePullDown: true,
+                header: WaterDropHeader(
+                    complete: Icon(Icons.check, color: Colors.green)),
+                controller: _refreshController,
+                onRefresh: _onRefresh,
+                onLoading: () {},
+                child: ListView(
+                  children: [
+                    Center(
+                        child: Stack(
+                      children: [
+                        SingleChildScrollView(
+                            child: Column(
+                                children: documentTiles.length > 0
+                                    ? documentTiles
+                                    : [
+                                        Text(
+                                            "No documents were found. If this is incorrect, try refreshing the page by pulling down. Otherwise, create a google document and get to writing content!")
+                                      ])),
+                      ],
+                    ))
+                  ],
+                ),
+              ),
               Align(
                 alignment: Alignment.bottomRight,
                 child: Padding(
@@ -170,7 +217,7 @@ class _EmployeeHomeState extends State<EmployeeHome> {
                 ),
               )
             ],
-          )));
+          ));
     }
   }
 }

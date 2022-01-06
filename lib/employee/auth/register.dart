@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import "../utilities/login_ui.dart";
 import "package:http/http.dart" as http;
 import "../utilities/localStorage.dart" as localStorage;
@@ -10,6 +13,21 @@ import "../utilities/widgets.dart";
 import "login.dart";
 import "../utilities/utils.dart";
 import "package:email_validator/email_validator.dart";
+import 'package:url_launcher/url_launcher.dart';
+
+String tokenPopupMessage =
+    "Referall tokens inhibit an excess of writers and written content at a given time. Before your registration, you should have spoken to someone from The Rhetorical Gazebo from whom you would have received a token. You can then this token in the indicated field to register as a writer with The Rhetorical Gazebo. If your token is invalid or you wish to register as a writer, please reach out to following email.";
+TextStyle emailTextStyleNoUnderline = TextStyle(
+    color: Colors.lightBlue, fontWeight: FontWeight.w800, fontSize: 16);
+TextStyle emailTextStyleUnderline = TextStyle(
+    color: Colors.lightBlue,
+    fontWeight: FontWeight.w800,
+    fontSize: 16,
+    decoration: TextDecoration.underline);
+
+void _launchURL(String url) async {
+  if (!await launch(url)) throw 'Could not launch $url';
+}
 
 class Register extends StatefulWidget {
   @override
@@ -155,7 +173,7 @@ class _RegisterState extends State<Register> {
     );
   }
 
-  Widget _buildTokenTF(String labelText, String hintText,
+  Widget _buildTokenTF(String labelText, String hintText, Function callback,
       {String extraLabel = ""}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -171,13 +189,16 @@ class _RegisterState extends State<Register> {
                 setState(() {
                   questionTextStyle = kLabelStyleMax;
                 });
+                if (callback != null) {
+                  callback([]);
+                }
               },
               onTapUp: (details) {
                 setState(() {
                   questionTextStyle = kLabelStyleMin;
                 });
               },
-              child: Text(extraLabel, style: questionTextStyle))
+              child: Text(extraLabel, style: questionTextStyle)),
         ]),
         SizedBox(height: 10.0),
         Container(
@@ -400,8 +421,60 @@ class _RegisterState extends State<Register> {
               SizedBox(
                 height: 25.0,
               ),
-              _buildTokenTF("Referral Token", "Your Referral Token",
-                  extraLabel: "What is this?"),
+              _buildTokenTF("Referral Token", "Your Referral Token", (args) {
+                showPopup(
+                    context,
+                    "Referral Tokens",
+                    Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(tokenPopupMessage,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w400,
+                                    height: 1.25)),
+                          ),
+                        ),
+                        SizedBox(
+                            height: MediaQuery.of(context).size.height / 50),
+                        LinkedText(
+                            centerText: true,
+                            text: "therhetoricalgazebo@gmail.com",
+                            up: emailTextStyleNoUnderline,
+                            down: emailTextStyleUnderline,
+                            callback: (args) async {
+                              Navigator.pop(context);
+                              setState(() {
+                                questionTextStyle = kLabelStyleMin;
+                              });
+                              if (!await launch(args[0])) {
+                                throw 'Could not launch ${args[0]}';
+                              }
+                            },
+                            callbackArgs: [
+                              "mailto:therhetoricalgazebo@gmail.com"
+                            ])
+                      ],
+                    ), () {
+                  Navigator.pop(context);
+                  setState(() {
+                    questionTextStyle = kLabelStyleMin;
+                  });
+                }, buttons: [DialogButton(child: Text("EXIT", style: TextStyle(color: Colors.white,
+                       fontWeight: FontWeight.w600, fontSize: 18)), onPressed: () {
+                  Navigator.pop(context);
+                  setState(() {
+                    questionTextStyle = kLabelStyleMin;
+                  });
+                })]);
+              }, extraLabel: "What is this?"),
               SizedBox(
                 height: 25.0,
               ),

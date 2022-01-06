@@ -15,7 +15,7 @@ Future<bool> _postArticle(Map<String, dynamic> fields) async {
     Map<String, dynamic> final_fields = fields;
     String? author = await localStorage.readFromLocalStorage("name");
     final_fields["content"] = content;
-    final_fields["name"] = author == null ? "Anonymous" : author;
+    final_fields["author"] = author == null ? "Anonymous" : author;
     Uri uri = Uri.parse(dotenv.env["domain"]! + "/api/articles");
     String local_token =
         await localStorage.readFromLocalStorage("x-auth-token");

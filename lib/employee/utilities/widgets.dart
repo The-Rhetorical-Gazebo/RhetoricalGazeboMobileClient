@@ -125,6 +125,38 @@ Future<void> showStoragePopup(BuildContext context, dynamic imageCallback) {
   ).show();
 }
 
+Future<void> showPopup(
+    BuildContext context, String title, Widget content, Function closeCallback,
+    {List<DialogButton>? buttons = null}) {
+  var alertStyle = AlertStyle(
+    animationType: AnimationType.fromTop,
+    isCloseButton: true,
+    isOverlayTapDismiss: true,
+    descStyle: TextStyle(fontWeight: FontWeight.w400),
+    descTextAlign: TextAlign.center,
+    animationDuration: Duration(milliseconds: 400),
+    alertBorder: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(0.0),
+      side: BorderSide(
+        color: Colors.grey,
+      ),
+    ),
+    titleStyle: TextStyle(
+      color: Colors.black,
+    ),
+    alertAlignment: Alignment.center,
+  );
+  return Alert(
+    closeFunction: closeCallback,
+    buttons: buttons,
+    context: context,
+    style: alertStyle,
+    title: title,
+    desc: "",
+    content: content,
+  ).show();
+}
+
 void showInput(BuildContext context, String hintText, imageCallback) {
   TextEditingController _urlController = TextEditingController();
   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -459,5 +491,59 @@ class _GenreDropdownState extends State<GenreDropdown> {
         ),
       ],
     );
+  }
+}
+
+class LinkedText extends StatefulWidget {
+  String? text;
+  bool? centerText = false;
+  TextStyle? up;
+  TextStyle? down;
+  Function? callback;
+  List<dynamic>? callbackArgs = [];
+  LinkedText(
+      {Key? key,
+      required this.text,
+      required this.up,
+      required this.down,
+      required this.centerText,
+      this.callback,
+      this.callbackArgs})
+      : super(key: key);
+
+  @override
+  _LinkedTextState createState() => _LinkedTextState();
+}
+
+class _LinkedTextState extends State<LinkedText> {
+  TextStyle currentTextStyle = TextStyle();
+  @override
+  void initState() {
+    setState(() {
+      currentTextStyle = widget.up!;
+      print("STYLE: $currentTextStyle");
+    });
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+        onTapDown: (details) {
+          setState(() {
+            currentTextStyle = widget.down!;
+          });
+          if (widget.callback != null) {
+            widget.callback!(widget.callbackArgs);
+          }
+        },
+        onTapUp: (details) {
+          setState(() {
+            currentTextStyle = widget.up!;
+          });
+        },
+        child: Text(widget.text!,
+            textAlign: widget.centerText! ? TextAlign.center : null,
+            style: currentTextStyle));
   }
 }
