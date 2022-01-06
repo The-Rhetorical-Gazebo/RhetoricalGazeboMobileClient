@@ -1,0 +1,7 @@
+.env
+!.gitignore
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+build/app/
+.DS_Store
